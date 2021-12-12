@@ -1,19 +1,30 @@
 // app.js
 App({
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
+    const app = this
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      success (res) {
+
+        if (res.code) {
+          wx.request({
+            url: `${app.globalData.baseUrl}/login`,
+            method: 'POST',
+            data: {
+              code: res.code
+            },
+            success(res){
+              console.log(res.data)
+              wx.setStorageSync('auth', res.data.auth)
+            }
+          })
+        } else {
+          console.log('Error' + res.errMsg)
+        }
       }
     })
   },
   globalData: {
-    userInfo: null
+    baseUrl: 'http://localhost:3000/api/v1',
+    // baseUrl: 'your production url'
   }
 })
