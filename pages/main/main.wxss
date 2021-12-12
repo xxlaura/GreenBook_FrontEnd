@@ -1,1 +1,83 @@
 /* pages/main/main.wxss */
+/* pages/landing/landing.wxss */
+.page {
+  margin: 25rpx;
+}
+
+.slogan {
+  width: 70%;
+}
+
+.h1 {
+  font-size: 30px
+}
+
+.searchbox {
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.category-section {
+  display: flex;
+  margin-top: 30rpx;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.category-card {
+  padding: 10rpx;
+  margin-right: 10rpx;
+}
+
+.category-photo {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 15rpx;
+}
+
+.personal-card {
+  display: flex;
+  margin-top: 20px;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  padding-left: 10rpx;
+  height: auto;
+  border: 2px solid #18191F;
+  box-sizing: border-box;
+  box-shadow: 3rpx 3rpx 1px green;
+  border-radius: 32rpx;
+  align-items: center; 
+}
+
+.item-cards {
+  position: relative;
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+
+.card-category {
+  border: 2px solid #18191F;
+  box-sizing: border-box;
+  border-radius: 32rpx;
+  margin-left: 10rpx;
+}
+
+.item-photo {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+  border-radius: 20rpx;
+}
+
+.avatar-large {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
