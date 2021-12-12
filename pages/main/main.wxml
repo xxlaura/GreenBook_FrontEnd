@@ -1,2 +1,103 @@
 <!--pages/main/main.wxml-->
-<text>pages/main/main.wxml</text>
+<view class="page">
+  <view class="header">
+  <view class="slogan">
+    <text class="h1">Welcome to the Green side!</text>
+  </view>
+</view>
+
+<view class="searchbox">
+  <slot></slot>
+    <view class='tit_seabox'>
+        <view class="tit_seabox_bar {{addflag?'tit_seabox_add':''}} {{searchflag?'tit_start_search':''}}">
+            <input type="text" bindinput="searchList" bindconfirm="endsearchList" bindfocus='getfocus' bindblur="blursearch" confirm-type='search' value='{{searchstr}}' placeholder='What do you want...' />
+            <icon type='search' size="32rpx"></icon>
+        </view>
+    </view>
+  </view>
+
+  <view class="category-section">
+    <view wx:for="{{['Clothes','Sports','Book', 'Lifestyle']}}">
+     <scroll-view scroll-x>
+      <view class="category-card">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="category-photo"></image>
+        <view>{{item}}</view>
+      </view>
+     </scroll-view>
+    </view>
+  </view>
+
+  <!-- <view class="category-section">
+    <view wx:for="{{['Clothes','Sports','Book', 'Lifestyle']}}"></view>
+    <scroll-container class="category-section">
+      <scroll-page  class="category-card">
+        <image src="/pages/landing/photos/2981639297526_.pic.jpg" class="category-photo"></image>
+        <view>{{item}}</view>
+      </scroll-page>
+    </scroll-container>
+  </view> -->
+
+  <view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text>Anthony</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Cool Jacket</text>
+      </view>
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Comfortable jeans</text>
+      </view>
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Coding Book</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text>Christian</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Cool Jacket</text>
+      </view>
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Comfortable jeans</text>
+      </view>
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Coding Book</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text>Anthony</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Cool Jacket</text>
+      </view>
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Comfortable jeans</text>
+      </view>
+      <view class="card-category">
+        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
+        <text class="h2">Coding Book</text>
+      </view>
+    </view>
+  </view>
+</view>
+
