@@ -1,25 +1,26 @@
-// pages/main/main.js
-Page({
+// pages/landing/landing.js
 
+Page({
+  
   /**
    * 页面的初始数据
    */
   data: {
-
+    categories: ['Clothes','Sports','Book', 'Lifestyle', 'Kichten', 'Office'],
+    items: ['Cool Jacket', 'Comfortable Jeans', 'Coding Books', 'Office Chairs']
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
