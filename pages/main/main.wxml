@@ -1,4 +1,4 @@
-<!--pages/main/main.wxml-->
+<!--pages/landing/landing.wxml-->
 <view class="page">
   <view class="header">
   <view class="slogan">
@@ -16,47 +16,25 @@
     </view>
   </view>
 
-  <view class="category-section">
+  <!-- <view class="category-section">
     <view wx:for="{{['Clothes','Sports','Book', 'Lifestyle']}}">
-     <scroll-view scroll-x>
-      <view class="category-card">
+      <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+        <view class="category-card">
+          <image src="/pages/landing/photos/2981639297526_.pic.jpg" class="category-photo"></image>
+          <view>{{item}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view> -->
+
+  <scroll-view scroll-x="{{true}}">
+    <view class="category-box">
+      <view class="category-card" wx:for="{{categories}}">
         <image src="/pages/main/photos/2981639297526_.pic.jpg" class="category-photo"></image>
         <view>{{item}}</view>
       </view>
-     </scroll-view>
     </view>
-  </view>
-
-  <!-- <view class="category-section">
-    <view wx:for="{{['Clothes','Sports','Book', 'Lifestyle']}}"></view>
-    <scroll-container class="category-section">
-      <scroll-page  class="category-card">
-        <image src="/pages/landing/photos/2981639297526_.pic.jpg" class="category-photo"></image>
-        <view>{{item}}</view>
-      </scroll-page>
-    </scroll-container>
-  </view> -->
-
-  <view class="personal-card">
-    <view class="profile-card">
-      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
-      <text>Anthony</text>
-    </view>
-    <view class="item-cards">
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Cool Jacket</text>
-      </view>
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Comfortable jeans</text>
-      </view>
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Coding Book</text>
-      </view>
-    </view>
-  </view>
+  </scroll-view>
 
   <view class="personal-card">
     <view class="profile-card">
@@ -64,17 +42,22 @@
       <text>Christian</text>
     </view>
     <view class="item-cards">
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Cool Jacket</text>
+      <view class="card-category" wx:for="{{items}}">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="item-photo"></image>
+        <view class="h2">{{item}}</view>
       </view>
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Comfortable jeans</text>
-      </view>
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Coding Book</text>
+    </view>
+  </view>
+
+  <view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text>Huiting</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category" wx:for="{{items}}">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="item-photo"></image>
+        <view class="h2">{{item}}</view>
       </view>
     </view>
   </view>
@@ -85,17 +68,22 @@
       <text>Anthony</text>
     </view>
     <view class="item-cards">
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Cool Jacket</text>
+      <view class="card-category" wx:for="{{items}}">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="item-photo"></image>
+        <view class="h2">{{item}}</view>
       </view>
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Comfortable jeans</text>
-      </view>
-      <view class="card-category">
-        <image class="item-photo" src="/pages/main/photos/2981639297526_.pic.jpg"></image>
-        <text class="h2">Coding Book</text>
+    </view>
+  </view>
+
+  <view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text>Hailey</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category" wx:for="{{items}}">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="item-photo"></image>
+        <view class="h2">{{item}}</view>
       </view>
     </view>
   </view>
