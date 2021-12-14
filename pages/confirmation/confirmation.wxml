@@ -1,0 +1,23 @@
+
+<!--pages/confirmation/confirmation.wxml -->
+
+<view class="page">
+  <view class="header">
+  <view class="slogan">
+    <text class="h1">Congrats! This is yours now</text>
+  </view>
+</view>
+
+<view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text>Hailey</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category" wx:for="{{items}}">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="item-photo"></image>
+        <view class="h2">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
