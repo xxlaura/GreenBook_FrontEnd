@@ -1,0 +1,95 @@
+/* pages/giveaway/giveaway.wxss */
+textarea {
+  width: 700rpx;
+  padding: 25rpx 0;
+}
+
+.textarea-wrp {
+  padding: 0 25rpx;
+  background-color: #fff;
+  border: 2px solid #ECF4D6;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.mini-btn{
+  margin-left: 10%;
+}
+
+.button {
+  background-color: #ECF4D6;
+}
+
+weui-uploader__input-box {
+  float: left;
+  position: relative;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  width: 96px;
+  height: 96px;
+  box-sizing: border-box;
+  background-color: #ededed;
+}
+
+.weui-cells_form input, .weui-cells_form textarea, .weui-cells_form label[for] {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.weui-uploader__input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input, textarea {
+  caret-color: #07c160;
+  caret-color: var(--weui-BRAND);
+}
+
+input {
+  appearance: none;
+  background-color: initial;
+  cursor: default;
+  align-items: baseline;
+  color: inherit;
+  text-overflow: ellipsis;
+  white-space: pre;
+  text-align: start !important;
+  padding: initial;
+  border: initial;
+  overflow: hidden !important;
+}
+
+i
+
+.video {
+  margin: 50px auto;
+  width: 100%;
+  height: 300px;
+}
+
+.photo {
+  width:30%;
+  height:100px;
+  visibility: visible;
+}
