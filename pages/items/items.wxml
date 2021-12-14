@@ -1,0 +1,37 @@
+<!--pages/items/items.wxml-->
+
+<view class="center">
+  <view class="backgroundgreen">
+  <view class="picture">
+    <image src="/pages/items/cooljacket.png"></image>
+  </view>
+
+  <view class="title">
+    <text>Cool Jacket</text>
+  </view>
+  
+  <view class="card_area d-flex align-items-center1">
+    <navigator bindtap="buttonClicked" class="btn btn-flat" href="#">take</navigator>
+    <navigator class="btn btn-gradient" href="#">chat</navigator>
+  </view>
+</view>
+
+  
+
+<view class="d-flex align-items-center2">
+  <ul class="list-inline tabs-underlined">
+  <li>
+    <navigator href="#" class="tab-underlined active">Info</navigator>
+  </li>
+  <li>
+    <navigator href="#" class="tab-underlined">Request</navigator>
+  </li>
+  <li>
+    <navigator href="#" class="tab-underlined">Owner</navigator>
+  </li>
+</ul>
+</view>
+<view class="paragraph">
+<text>Wireframe is still important for ideation. It will help you to quickly test idea. Wireframe is still important for ideation. It will help you to quickly test idea.</text>
+</view>
+</view>
