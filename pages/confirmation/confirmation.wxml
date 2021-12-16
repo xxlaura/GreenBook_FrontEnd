@@ -1,0 +1,23 @@
+
+<!--pages/confirmation/confirmation.wxml -->
+
+<!-- <view class="page"> -->
+  <view class="header">
+    <text class="h1">Congrats!This is yours now👇 </text>
+  </view>
+<!-- </view> -->
+
+
+  <view class="personal-card">
+  <view> <text class= "h1"> Books</text> </view>
+  <view><text class= "h2"> 5 Books to help you increase your financial IQ. Books such as, “Think & Grow Rich” by Napolean Hill. </text></view>
+    <view class="profile-card">
+    </view>
+  </view>
+    
+  
+
+  <view class="header">
+    <text class="h1"> Now it's time to coffee, chat and take it home</text>
+  </view>
+

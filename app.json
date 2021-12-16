@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/main/main",
+    "pages/confirmation/confirmation"
     "pages/giveaway/giveaway",
     "pages/profile/profile",
     "pages/items/items"
