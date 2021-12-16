@@ -1,5 +1,5 @@
 <!--pages/giveaway/giveaway.wxml-->
-<view style="padding:75rpx">Add Photo</view>
+<view style="padding:75rpx">Take a photo</view>
 <button class="mini-btn button" size="mini" bindtap="takePhoto">+</button>
 <view style="padding:50rpx">
   <form bindsubmit="bindSubmit">

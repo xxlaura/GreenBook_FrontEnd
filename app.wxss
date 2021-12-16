@@ -8,3 +8,12 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.h1 {
+  font-size: 60rpx;
+}
+
+.h2 {
+  font-size: 30rpx;
+  line-break: strict;
+}

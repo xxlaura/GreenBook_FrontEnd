@@ -7,7 +7,7 @@ App({
 
         if (res.code) {
           wx.request({
-            url: `${app.globalData.baseUrl}/login`,
+            url: `http://localhost:3000/api/v1/login`,
             method: 'POST',
             data: {
               code: res.code

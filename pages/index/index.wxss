@@ -14,6 +14,6 @@
   border-radius: 50%;
 }
 
-.usermotto {
+.welcome {
   margin-top: 200px;
 }
