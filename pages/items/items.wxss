@@ -7,22 +7,22 @@
   padding: 8px 24px;
   border-radius: 10px;
   font-weight: bold;
+  vertical-align: middle;
   background: linear-gradient(white, white);
   transition: background 0.3s ease;
   border: 3px solid rgb(145, 177, 103);
   width: 30px;
-  height: 2.3em;
-  line-height: 2.3;
+  height: 1.3em;
   margin-left: 15%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .btn-flat:hover {
-  background: #1BCB7F;
+  background: rgb(145, 177, 103);
   color: white;
 }
 
-.btn-gradient {
+/* .btn-gradient {
   font-family: Comfortaa;
   flex-direction: column;
   color: black;
@@ -42,7 +42,7 @@
 .btn-gradient:hover {
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
-}
+} */
 
 
 .s_product_text .card_area {
@@ -94,14 +94,17 @@
 }
 
 .title {
-  margin-left: 20%;
-  padding: 20px;
   font-size: 30px;
-  font: bold;
+  font-weight: 600;
+  text-align: center;
+  padding: 20rpx;
 }
 
-.picture {
-  margin-left: 5%;
+.slide-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20rpx;
 }
 
 .navy {
@@ -109,6 +112,7 @@
 }
 
 .backgroundgreen {
+  margin-top: 10rpx;
   background-color: #D8E9A8;
   margin-right: 5%;
 }
