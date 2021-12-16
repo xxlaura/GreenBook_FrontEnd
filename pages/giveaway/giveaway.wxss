@@ -32,7 +32,7 @@ textarea {
 }
 
 .button {
-  background-color: white;
+  background-color: #ECF4D6;
 }
 
 weui-uploader__input-box {

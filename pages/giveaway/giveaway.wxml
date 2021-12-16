@@ -1,44 +1,36 @@
 <!--pages/giveaway/giveaway.wxml-->
-<view style="padding:50rpx">
 
-  <form bindsubmit="bindSubmit">
-  <view class="page-body">
-  <view class="page-body-wrapper">
-
-    <view class="btn-area">
-
-      <!-- <button type="primary" bindtap="takePhoto">拍照</button> -->
-    </view>
-      <image wx:if="{{src}}" class="photo" mode="widthFix" src="{{src}}"></image>
-      <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
-    </view>
+<view style="padding:75rpx" class="align-items-center1 d-flex">  
+  <!-- <camera device-position="back" flash="off" binderror="error" style="width: 20%; height: 50px; border-radius: 50%; margin-bottom: 10%;"></camera> -->
+  <!-- <button class="mini-btn button icon" size="mini" bindtap="takePhoto"><image style="width: 30px; height: 40px;" src="/pages/giveaway/cameraicon.png"> photo</image></button> -->
+  <button bindtap="addPhoto" class="button" type="file">+</button>
 </view>
 
     <view class="page-body">
   <view class="page-section">
     <view class="page-section-title">Name</view>
     <view class="textarea-wrp">
-      <textarea bindblur="bindTextAreaBlur" auto-height />
+      <textarea name="name" bindblur="bindTextAreaBlur" auto-height />
     </view>
   </view>
   <view class="page-section">
     <view class="page-section-title">Category</view>
     <view class="textarea-wrp">
-      <textarea bindblur="bindTextAreaBlur" auto-height />
+      <textarea name="category" bindblur="bindTextAreaBlur" auto-height />
     </view>
   </view>
 
   <view class="page-section">
     <view class="page-section-title">Description</view>
     <view class="textarea-wrp">
-      <textarea bindblur="bindTextAreaBlur" auto-height />
+      <textarea name="description" bindblur="bindTextAreaBlur" auto-height />
     </view>
   </view>
 
   <view class="page-section">
     <view class="page-section-title">Location</view>
     <view class="textarea-wrp">
-      <textarea bindblur="bindTextAreaBlur" auto-height />
+      <textarea name="location" bindblur="bindTextAreaBlur" auto-height />
     </view>
   </view>
 

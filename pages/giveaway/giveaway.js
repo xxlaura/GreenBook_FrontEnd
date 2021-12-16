@@ -76,8 +76,45 @@ Page({
   bindTextAreaBlur: function(e) {
     console.log(e.detail.value)
   },
-  bindSubmit: function(e) {
-    console.log(e)
+  bindSubmit: function (e) {
+    // let image = e.detail.value.image
+    console.log(e.detail)
+    let name = e.detail.value.name;
+    let category = e.detail.value.category;
+    let description = e.detail.value.description;
+    let location = e.detail.value.location;
+
+    let giveaway = {
+      // image: image,
+      name: name,
+      category: category,
+      description: description,
+      location: location
+    }
+    console.log(giveaway)
+    const page = this
+    const auth = wx.getStorageSync('auth')
+    const header = {
+      "X-USER-TOKEN": auth.token,
+      "X-USER-EMAIL": auth.email
+    }
+    // Post data to API
+    wx.request({
+      url: `http://localhost:3000/api/v1/items`,
+      header: header,
+      method: 'POST',
+      data: {item: giveaway},
+      success(res) {
+        const items = res.data.items;
+        page.setData ({
+          items: items
+        })
+        // redirect to index page when done
+        wx.redirectTo({
+          url: '/pages/main/main'
+        });
+      }
+    })
   },
 
   onLoad() {
@@ -112,10 +149,23 @@ Page({
   },
   error(e) {
     console.log(e.detail)
-  }
+  },
 
   
-    
+  addPhoto() {
+    wx.chooseMedia({
+      count: 9,
+      mediaType: ['image','video'],
+      sourceType: ['album', 'camera'],
+      maxDuration: 30,
+      camera: 'back',
+      success(res) {
+        console.log(res.tempFiles.tempFilePath)
+        console.log(res.tempFiles.size)
+      }
+    })
+
+  }
 
 
 })
