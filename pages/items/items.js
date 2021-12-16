@@ -1,11 +1,59 @@
 // pages/items/items.js
 Page({
-
+  onShareAppMessage() {
+    return {
+      title: 'swiper',
+      path: '../items/photos'
+    }
+  },
   /**
    * Page initial data
    */
   data: {
+    imgUrls: [
+      '../items/photos/cooljacket.png',
+      '../items/photos/cooljacket copy.png',
+      '../items/photos/cooljacket copy 2.png',
+    ],
+    indicatorDots: true,
+    autoplay: false,
+    interval: 2000,
+    duration: 500,
+    Height: ""
+  },
 
+  imgHeight: function(e) {
+    const winWid = wx.getSystemInfoSync().windowWidth;
+    const imgh = e.detail.height;
+    const imgw = e.detail.width;
+    const swiperH = winWid*imgh/imgw + "px"
+    this.setData({
+      Height: swiperH
+    })
+  },
+
+  changeIndicatorDots() {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
+  },
+
+  changeAutoplay() {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+
+  intervalChange(e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+
+  durationChange(e) {
+    this.setData({
+      duration: e.detail.value
+    })
   },
 
   /**

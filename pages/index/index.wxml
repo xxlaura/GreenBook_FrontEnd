@@ -2,7 +2,7 @@
 <view class="container">
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
+      <view class="userinfo-avatar" bindtap="goToMainPage">
         <open-data type="userAvatarUrl"></open-data>
       </view>
       <open-data type="userNickName"></open-data>
@@ -17,7 +17,7 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="welcome">
+    <text class="welcome-text">Welcome to the Green side!</text>
   </view>
 </view>

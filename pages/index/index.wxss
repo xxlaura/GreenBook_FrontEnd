@@ -1,4 +1,11 @@
 /**index.wxss**/
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #D8E9A8;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -14,6 +21,10 @@
   border-radius: 50%;
 }
 
-.usermotto {
-  margin-top: 200px;
+.welcome {
+  position: absolute;
+  margin-top: 300px;
+  font-size: larger;
+  color: #5B6D5B;
+  font-weight: 600;
 }

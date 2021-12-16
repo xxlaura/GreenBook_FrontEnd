@@ -1,17 +1,32 @@
 {
   "pages": [
-    "pages/giveaway/giveaway",
     "pages/index/index",
     "pages/logs/logs",
     "pages/main/main",
+    "pages/giveaway/giveaway",
+    "pages/profile/profile",
     "pages/items/items"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#D8E9A8",
+    "navigationBarTitleText": "GreenBook",
     "navigationBarTextStyle": "black"
   },
+
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#D8E9A8",
+    "list": [{
+      "pagePath": "pages/main/main",
+      "text": "Market"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "Mine"
+    }]
+  },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
