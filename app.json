@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/giveaway/giveaway",
     "pages/index/index",
     "pages/logs/logs",
     "pages/main/main",
     "pages/profile/profile"
+    "pages/items/items"
   ],
   "window": {
     "backgroundTextStyle": "light",

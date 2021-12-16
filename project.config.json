@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false,
+    "urlCheck": true,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -21,6 +21,7 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": true,
@@ -30,6 +31,7 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
+
     "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
@@ -38,6 +40,16 @@
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true
+
+    "useIsolateContext": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": false
+
   },
   "compileType": "miniprogram",
   "libVersion": "2.21.1",
@@ -49,10 +61,17 @@
   "scripts": {},
   "isGameTourist": false,
   "condition": {
-    "plugin": {
+    
+    "search": {
+      "list": []
+    },
+    "conversation": {
       "list": []
     },
     "game": {
+      "list": []
+    },
+    "plugin": {
       "list": []
     },
     "gamePlugin": {
