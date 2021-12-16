@@ -1,84 +1,4 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"enhance": false,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": false,
-		"coverView": true,
-		"nodeModules": false,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"uglifyFileName": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
-		"useMultiFrameRuntime": true,
-		"useApiHook": true,
-		"useApiHostProcess": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"enableEngineNative": false,
-		"bundle": false,
-		"useIsolateContext": true,
-		"useCompilerModule": true,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"userConfirmedBundleSwitch": false,
-		"packNpmManually": false,
-		"packNpmRelationList": [],
-		"minifyWXSS": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.15.0",
-	"appid": "wx6d8d3fb5cb5869bb",
-	"projectname": "GreenBook",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"scripts": {},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"list": []
-		},
-		"conversation": {
-			"list": []
-		},
-		"plugin": {
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"list": []
-		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "Request_confirmation",
-					"pathName": "pages/confirmation/confirmation",
-					"scene": null
-				}
-			]
-		}
-	}
-=======
   "description": "项目配置文件",
   "packOptions": {
     "ignore": []
@@ -111,7 +31,7 @@
     },
     "enableEngineNative": false,
     "bundle": false,
-    "useIsolateContext": false,
+    "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
@@ -120,7 +40,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.21.1",
+  "libVersion": "2.15.0",
   "appid": "wx6d8d3fb5cb5869bb",
   "projectname": "GreenBook",
   "debugOptions": {
@@ -128,6 +48,8 @@
   },
   "scripts": {},
   "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
     "plugin": {
       "list": []
@@ -141,8 +63,9 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/main/main",
-          "pathName": "pages/main/main",
+          "id": -1,
+          "name": "Request_confirmation",
+          "pathName": "pages/confirmation/confirmation",
           "query": "",
           "scene": null
         },
@@ -153,20 +76,8 @@
           "scene": null
         },
         {
-          "name": "pages/profile/profile",
-          "pathName": "pages/profile/profile",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/items/items",
           "pathName": "pages/items/items",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
           "scene": null
         }
       ]

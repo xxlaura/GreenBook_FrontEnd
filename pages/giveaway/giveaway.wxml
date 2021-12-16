@@ -6,7 +6,7 @@
   <button bindtap="addPhoto" class="button" type="file">+</button>
 </view>
 
-    <view class="page-body">
+<view class="page-body">
   <view class="page-section">
     <view class="page-section-title">Name</view>
     <view class="textarea-wrp">
@@ -19,14 +19,12 @@
       <textarea name="category" bindblur="bindTextAreaBlur" auto-height />
     </view>
   </view>
-
   <view class="page-section">
     <view class="page-section-title">Description</view>
     <view class="textarea-wrp">
       <textarea name="description" bindblur="bindTextAreaBlur" auto-height />
     </view>
   </view>
-
   <view class="page-section">
     <view class="page-section-title">Location</view>
     <view class="textarea-wrp">
@@ -34,14 +32,11 @@
     </view>
   </view>
 
-
-
-    <custom-comp></custom-comp>
-    <button class="button" form-type="submit">submit</button>
-
+  <custom-comp></custom-comp>
+  <button class="button" form-type="submit">submit</button>
 </view>
-  </form>
-</view>  
+  <!-- </form> -->
+<!-- </view>   -->
 
 
   <!-- <view>
