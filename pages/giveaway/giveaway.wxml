@@ -9,9 +9,9 @@
 
       <!-- <button type="primary" bindtap="takePhoto">拍照</button> -->
     </view>
-    <image wx:if="{{src}}" class="photo" mode="widthFix" src="{{src}}"></image>
-    <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
-  </view>
+      <image wx:if="{{src}}" class="photo" mode="widthFix" src="{{src}}"></image>
+      <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
+    </view>
 </view>
 
     <view class="page-body">
