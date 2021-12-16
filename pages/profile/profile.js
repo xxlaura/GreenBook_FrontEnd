@@ -1,7 +1,6 @@
-// pages/landing/landing.js
-
+// pages/profile/profile.js
 Page({
-  
+
   /**
    * 页面的初始数据
    */
@@ -14,36 +13,19 @@ Page({
       url: '../giveaway/giveaway'
     })
   },
-  
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
-  //发起网络请求
-    let page = this;
-    const auth = wx.getStorageSync('auth')
-    const header = {
-      "X-USER-TOKEN": auth.token,
-      "X-USER-EMAIL": auth.email
-    }
-    wx.request({
-      url: 'http://localhost:3000/api/v1/items', 
-      header: header,
-      method: "GET",
-      success(res) {
-        const items = res.data.items;
-        page.setData ({
-          items: items
-        })
-      }
-    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+
   },
 
   /**

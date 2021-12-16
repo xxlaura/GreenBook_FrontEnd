@@ -31,6 +31,16 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
+
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+
     "useIsolateContext": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
@@ -39,6 +49,7 @@
     "disableUseStrict": false,
     "showES6CompileOption": false,
     "useCompilerPlugins": false
+
   },
   "compileType": "miniprogram",
   "libVersion": "2.21.1",
@@ -50,6 +61,7 @@
   "scripts": {},
   "isGameTourist": false,
   "condition": {
+    
     "search": {
       "list": []
     },
@@ -66,7 +78,25 @@
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "pages/main/main",
+          "pathName": "pages/main/main",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/giveaway/giveaway",
+          "pathName": "pages/giveaway/giveaway",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/profile/profile",
+          "pathName": "pages/profile/profile",
+          "scene": null
+        }
+      ]
     }
   }
 }
