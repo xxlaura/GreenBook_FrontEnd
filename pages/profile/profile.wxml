@@ -1,0 +1,20 @@
+<!--pages/profile/profile.wxml-->
+<view class="page">
+  <view class="profile-header">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <view class="profile-text">
+        <text class="name">Christian</text>
+        <button bindtap="bindViewTap" class="add-btn" size="mini">Join the Green Side!</button>
+      </view>
+  </view>
+
+  <view class="lists">
+    <view class="list">
+      <text class="list-name">Posts</text>
+    </view>
+
+    <view class="list">
+      <text class="list-name">Requests</text>
+    </view>
+  </view>
+</view>

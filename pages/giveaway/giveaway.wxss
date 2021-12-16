@@ -93,3 +93,25 @@ i
   height:100px;
   visibility: visible;
 }
+.icon {
+  width: 10;
+  margin-right: 50%;
+
+}
+
+.align-items-center1 {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+  margin-left: 5%;
+}
+
+.align-items-center2 {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+  margin-left: 10%;
+}
+
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
