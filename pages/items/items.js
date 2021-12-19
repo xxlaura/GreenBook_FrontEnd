@@ -56,6 +56,12 @@ Page({
     })
   },
 
+  buttonClicked () {
+    wx.navigateTo({
+      url: '../confirmation/confirmation',
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
@@ -74,7 +80,13 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+      const page = this
+      wx.request({
+        url: `${getApp().globalData.baseUrl}/items/${page.data.options.id}`,
+        success(res) {
+          page.setData(res.data)
+        }
+      })
   },
 
   /**

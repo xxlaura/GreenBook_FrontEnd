@@ -1,8 +1,9 @@
 /* pages/items/items.wxss */
 
 .btn-flat {
+  width: 100px!important;
   font-family: Comfortaa;
-  flex-direction: column;
+  /* flex-direction: column; */
   color: black;
   padding: 8px 24px;
   border-radius: 10px;
@@ -11,8 +12,7 @@
   background: linear-gradient(white, white);
   transition: background 0.3s ease;
   border: 3px solid rgb(145, 177, 103);
-  width: 30px;
-  height: 1.3em;
+  box-shadow: 0px 4px 0px rgb(145, 177, 103);
   margin-left: 15%;
   margin-bottom: 20px;
 }

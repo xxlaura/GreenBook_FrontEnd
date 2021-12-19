@@ -4,6 +4,16 @@
       <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
       <view class="profile-text">
         <text class="name">Christian</text>
+        
+
+        <view class="userinfo">
+          <block wx:if="{{hasUserInfo}}">
+            <image bindtap="bindViewTap" class="avatar-large" src="{{userInfo.avatarUrl}}" ></image>
+            <text class="name">{{userInfo.nickName}}</text>
+          </block>
+         </view>
+        
+        
         <button bindtap="bindViewTap" class="add-btn" size="mini">Join the Green Side!</button>
       </view>
   </view>

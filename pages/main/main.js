@@ -28,7 +28,7 @@ Page({
       "X-USER-EMAIL": auth.email
     }
     wx.request({
-      url: 'http://localhost:3000/api/v1/items', 
+      url: `${getApp().globalData.baseUrl}/items`, 
       header: header,
       method: "GET",
       success(res) {
@@ -39,6 +39,13 @@ Page({
       }
     })
   },
+
+  navigateToItemShow(e){
+    console.log(e.mark.id);
+      wx.navigateTo({
+        url: `/pages/items/id=${e.mark.id}`,
+      })
+    },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
