@@ -25,8 +25,8 @@ App({
   },
 
   globalData: {
-    baseUrl: 'http://localhost:3000/api/v1',
-    // baseUrl: 'your production url'
+    // baseUrl: 'http://localhost:3000/api/v1',
+    baseUrl: 'https://green-book-happyhour.herokuapp.com/api/v1'
     
   }
 })

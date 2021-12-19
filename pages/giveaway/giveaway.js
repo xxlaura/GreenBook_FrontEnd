@@ -85,7 +85,7 @@ Page({
     let location = e.detail.value.location;
 
     let giveaway = {
-      // image: image,
+      image: image,
       name: name,
       category: category,
       description: description,
