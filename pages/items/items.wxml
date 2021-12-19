@@ -10,10 +10,11 @@
         </block>
       </swiper>
 
+
     <view class="title" wx:for="{{items}}"><text>{{item.name}}</text></view>
     <view class="card_area d-flex align-items-center1">
-      <navigator bindtap="buttonClicked" class="btn btn-flat" href="#">Take</navigator>
-      <navigator class="btn btn-flat" href="#">Chat</navigator>
+      <button bindtap="buttonClicked" class="btn btn-flat" href="#">Take</button>
+      <button bindtap="buttonClicked" class="btn btn-flat" href="#">Chat</button>
     </view>
   </view>
   

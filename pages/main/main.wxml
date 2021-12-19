@@ -19,7 +19,7 @@
 
   <scroll-view scroll-x="{{true}}">
     <view class="category-box">
-      <view class="category-card" wx:for="{{items}}">
+      <view bindtap="navigateToItemShow" wx:for="{{items}}" mark:id="{{item.id}}" wx:key = "unique" class="category-card" >
         <image src="/pages/main/photos/2981639297526_.pic.jpg" class="category-photo"></image>
         <view>{{item.name}}</view>
       </view>

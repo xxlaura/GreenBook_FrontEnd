@@ -100,7 +100,7 @@ Page({
     }
     // Post data to API
     wx.request({
-      url: `http://localhost:3000/api/v1/items`,
+      url: `${app.globalData.baseUrl}/items`,
       header: header,
       method: 'POST',
       data: {item: giveaway},
