@@ -10,10 +10,19 @@
 } 
 
 .h1 {
-  font-size: 60rpx;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20rpx;
 }
 
 .h2 {
   font-size: 30rpx;
   line-break: strict;
+}
+
+.paragraph {
+  color: #474A57;
+  font-size: 15px;
+  white-space: 5px;
 }
