@@ -43,7 +43,7 @@ Page({
   navigateToItemShow(e){
     console.log(e.mark.id);
       wx.navigateTo({
-        url: `/pages/items/id=${e.mark.id}`,
+        url: '/pages/items/items',
       })
     },
 

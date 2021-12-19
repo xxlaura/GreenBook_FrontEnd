@@ -9,20 +9,32 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.personal-card {
+
+
+
+.item-card{
   display: flex;
-  flex-direction: column;
   margin-top: 20rpx;
   padding-top: 20rpx;
   padding-bottom: 20rpx;
   padding-left: 20rpx;
+  padding-right: 20rpx;
   height: 300rpx;
   border: 5rpx solid #18191F;
   box-sizing: border-box;
   box-shadow: 3rpx 3rpx 1px green;
   border-radius: 32rpx;
   align-items: center; 
-  margin: 50rpx
+  margin: 50rpx;
+  overflow: scroll;
+  text-align: justify;
+  box-shadow: 0px 4px 0px #000000;
+}
+
+
+.item-intro {
+  display: flex;
+  
 }
 
 .h2 {
@@ -30,13 +42,32 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.profile-card {
+.personal-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+  padding-left: 20rpx;
+  height: 400rpx;
+  border: 5rpx solid #18191F;
+  box-sizing: border-box;
+  box-shadow: 3rpx 3rpx 1px green;
+  border-radius: 32rpx;
+  align-items: center; 
+  margin: 50rpx;
+  box-shadow: 0px 4px 0px #000000;
+  align-content: center;
+  text-align: justify;
+}
+
+/* .profile-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 180rpx;
-  margin-right: 10rpx;
-}
+  margin-right: 10rpx; 
+} */
 
 .container {
   position: absolute;

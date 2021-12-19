@@ -11,7 +11,7 @@
       </swiper>
 
 
-    <view class="title" wx:for="{{items}}"><text>{{item.name}}</text></view>
+    <view class="title"><text>Cool Jacket</text></view>
     <view class="card_area d-flex align-items-center1">
       <button bindtap="buttonClicked" class="btn btn-flat" href="#">Take</button>
       <button bindtap="buttonClicked" class="btn btn-flat" href="#">Chat</button>
@@ -32,8 +32,8 @@
     </ul>
   </view>
 
-  <view class="paragraph" wx:for="{{items}}">
-    <text>{{item.details}}</text>
+  <view class="paragraph">
+    <text>This is a very cool jacket I got it in Brick Lane, London. My ex-girlfriend bought me this one but we broke up so I think I don't need it any more.</text>
   </view>
 </view>
 
