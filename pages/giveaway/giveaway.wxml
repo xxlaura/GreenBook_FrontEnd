@@ -3,11 +3,11 @@
 <view style="padding:75rpx" class="align-items-center1 d-flex">  
   <!-- <camera device-position="back" flash="off" binderror="error" style="width: 20%; height: 50px; border-radius: 50%; margin-bottom: 10%;"></camera> -->
   <!-- <button class="mini-btn button icon" size="mini" bindtap="takePhoto"><image style="width: 30px; height: 40px;" src="/pages/giveaway/cameraicon.png"> photo</image></button> -->
-  <button bindtap="addPhoto" class="button" type="file">+</button>
+  <button name="image" bindtap="addPhoto" class="button" type="file">+</button>
 </view>
 
 <view class="page-body">
-  <view class="page-section">
+  <view class="page-section" >
     <view class="page-section-title">Name</view>
     <view class="textarea-wrp">
       <textarea name="name" bindblur="bindTextAreaBlur" auto-height />
@@ -35,55 +35,4 @@
   <custom-comp></custom-comp>
   <button class="button" form-type="submit">submit</button>
 </view>
-  <!-- </form> -->
-<!-- </view>   -->
-
-
-  <!-- <view>
-    <text>generous giveaway!</text>
-  </view>
-<form action="bindSubmit">
-  <view class="user-input">
-    <view class="text-area-wrap">
-      <view>
-        <text>Add Photo</text>
-      </view>
-    </view>
-  </view>
-  <view class="user-input">
-    <view class="text-area-wrap">
-      <view>
-        <text>Name</text>
-      </view>
-    </view>
-  </view>
-  <view class="user-input">
-    <view class="text-area-wrap">
-      <view>
-        <text>Category</text>
-      </view>
-    </view>
-  </view>
-  <view class="user-input">
-    <view class="text-area-wrap">
-      <view>
-        <text>Description</text>
-      </view>
-    </view>
-  </view>
-  <view class="user-input">
-    <view class="text-area-wrap">
-      <view>
-        <text>Location</text>
-      </view>
-    </view>
-  </view>
-  <view class="user-input">
-    <view class="text-area-wrap">
-      <view>
-        <text>Tags</text>
-      </view>
-    </view>
-  </view>
-</form> -->
-
+ 

@@ -10,7 +10,7 @@
         </block>
       </swiper>
 
-    <view class="title"><text>Cool Jacket</text></view>
+    <view class="title" wx:for="{{items}}"><text>{{item.name}}</text></view>
     <view class="card_area d-flex align-items-center1">
       <navigator bindtap="buttonClicked" class="btn btn-flat" href="#">Take</navigator>
       <navigator class="btn btn-flat" href="#">Chat</navigator>
@@ -31,8 +31,8 @@
     </ul>
   </view>
 
-  <view class="paragraph">
-    <text>Wireframe is still important for ideation. It will help you to quickly test idea. Wireframe is still important for ideation. It will help you to quickly test idea.</text>
+  <view class="paragraph" wx:for="{{items}}">
+    <text>{{item.details}}</text>
   </view>
 </view>
 

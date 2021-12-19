@@ -28,7 +28,7 @@ Page({
       "X-USER-EMAIL": auth.email
     }
     wx.request({
-      url: 'http://localhost:3000/api/v1/items', 
+      url: 'https://green-book-happyhour.herokuapp.com/api/v1', 
       header: header,
       method: "GET",
       success(res) {
