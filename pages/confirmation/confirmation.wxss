@@ -37,3 +37,38 @@
   width: 180rpx;
   margin-right: 10rpx;
 }
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;  
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180rpx;
+  margin-right: 10rpx;
+}
+
+.avatar-large {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 2rpx solid #18191F;
+  align-items: left
+}
+
+.item-photo {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 5rpx;
+  border-radius: 20rpx;
+}
+
+.item-cards {
+  position: relative;
+  display: flex;
+  overflow: auto;
+}

@@ -15,9 +15,50 @@
     </view>
   </view>
     
-  
+  <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="goToMainPage">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称           </button>
+      </block>
+  </view>
+</view>
+      
 
   <view class="header">
     <text class="h1"> Now it's time to coffee, chat and take it home</text>
   </view>
 
+
+<!-- <view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text class='h1'> Hailey</text>
+      <text class= 'h2'> Zero waste to save the planet</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category" wx:for="{{items}}">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="item-photo"></image>
+        <view class="h2">{{item.name}}</view>
+      </view>
+    </view>
+</view> -->
+
+ <view class="personal-card">
+    <view class="profile-card">
+      <image class="avatar-large" alt="avatar-large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE8IU_eEJkqBgsE95FRG6T-aX-8KEu_8VBQ&usqp=CAU"></image>
+      <text class='h1'>Christian</text>
+      <text class= 'h2'> Zero waste to save the planet</text>
+    </view>
+    <view class="item-cards">
+      <view class="card-category" wx:for="{{items}}">
+        <image src="/pages/main/photos/2981639297526_.pic.jpg" class="item-photo"></image>
+        <view class="h2">{{item.name}}</view>
+      </view>
+    </view>
+ </view>
